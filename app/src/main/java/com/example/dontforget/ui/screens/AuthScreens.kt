@@ -12,7 +12,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.dontforget.viewmodel.AuthViewModel
 
 @Composable
-fun LoginScreen(onLoggedIn: () -> Unit, authVm: AuthViewModel = viewModel()) {
+fun LoginScreen(onLoggedIn: () -> Unit,onNavigateToRegister: () -> Unit, authVm: AuthViewModel = viewModel()) {
     val state by authVm.state.collectAsState()
 
     var email by remember { mutableStateOf("") }
@@ -35,7 +35,7 @@ fun LoginScreen(onLoggedIn: () -> Unit, authVm: AuthViewModel = viewModel()) {
             Text("Login")
         }
         Spacer(modifier = Modifier.height(8.dp))
-        TextButton(onClick = { /* navigate to register by parent NavHost via passed lambda or via NavController */ }) {
+        TextButton(onClick = { onNavigateToRegister() }) {
             Text("Don't have an account? Register")
         }
         if (state is com.example.dontforget.viewmodel.AuthState.Loading) {

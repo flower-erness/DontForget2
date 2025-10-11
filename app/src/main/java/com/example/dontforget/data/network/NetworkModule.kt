@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object NetworkModule {
     // TODO: replace with your deployed server URL (must end with '/')
-    private const val BASE_URL = "https://YOUR_SERVER_BASE_URL/"
+    private const val BASE_URL = "https://dontforget2-production.up.railway.app/"
 
     fun provideAuthApi(tokenProvider: () -> String?): AuthApi {
         val logging = HttpLoggingInterceptor().apply {

@@ -23,10 +23,25 @@ fun MainNavHost() {
 
     NavHost(navController = navController, startDestination = startDestination) {
         composable("login") {
-            LoginScreen(onLoggedIn = { navController.navigate("list") }, authVm = authVm)
+            LoginScreen(onLoggedIn = {
+                navController.navigate("list") {
+                    popUpTo("login") { inclusive = true }
+                }
+            },
+                onNavigateToRegister = {
+                    navController.navigate("register")
+                }
+            )
         }
         composable("register") {
-            RegisterScreen(onRegistered = { navController.navigate("list") }, authVm = authVm)
+            RegisterScreen(
+                onRegistered = {
+                    navController.navigate("list") {
+                        popUpTo("register") { inclusive = true }
+                    }
+                },
+                authVm = viewModel()
+            )
         }
         composable("list") {
             val vm: com.example.dontforget.viewmodel.SubscriptionViewModel = viewModel()
