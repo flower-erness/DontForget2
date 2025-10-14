@@ -2,14 +2,19 @@ Don’t Forget – Subscription Tracker App
 App Video Link: https://youtube.com/shorts/x09M3K_RPnM?si=mMSMy4uSxr32xuNP
 
 Overview
-Don’t Forget is a native Android application built with Kotlin to help users efficiently track, manage, and receive reminders for recurring subscriptions such as Netflix, DStv, gym memberships, or software renewals.
-The application ensures that users never miss a renewal or payment date by providing a secure login system, a structured dashboard, and automated reminders for upcoming billing events.
+Don’t Forget is a native Android application built with Kotlin to help users efficiently track, manage, and receive reminders for
+recurring subscriptions such as Netflix, DStv, gym memberships, or software renewals.
+The application ensures that users never miss a renewal or payment date by providing a secure login system, a structured dashboard,
+and automated reminders for upcoming billing events.
+
 Key Features
 1.	Login and Registration – Provides a secure user authentication system with session management.
 2.	View Subscriptions – Displays all active subscriptions, including name, cost, and billing frequency.
 3.	Add, Edit, and Delete Subscriptions – Enables users to manage their subscriptions within one interface.
 4.	Smart Reminders – Sends notifications before billing dates to prevent missed payments.
 5.	Dashboard Overview – Presents a summary of total monthly spending and upcoming payment dates.
+
+
 Tech Stack
 Category	Technology
 Language	Kotlin
@@ -28,6 +33,8 @@ Prerequisites
 Before running the project, ensure the following software and tools are installed:
 1.	Android Studio (latest version recommended)
 2.	An Android device or emulator with API Level 21 or higher
+
+
 Run the Application
 1.	Clone the project repository.
 2.	Open the project in Android Studio.
@@ -36,6 +43,7 @@ Run the Application
 
 
 API Endpoints
+
 Functionality	Method	Endpoint	Description
 Register User	POST	/auth/register	Creates a new user account
 Login User	POST	/auth/login	Authenticates a user and issues an access token
