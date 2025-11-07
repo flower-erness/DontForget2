@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_badges_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Achievements"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textStyle="bold"
+            android:paddingBottom="16dp" />
+
+        <LinearLayout
+            android:id="@+id/badge_item_1"
+            style="@style/BadgeItemContainer">
+
+            <ImageView
+                android:id="@+id/badge_icon_1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_star"
+                android:contentDescription="First Subscription Badge"
+                app:tint="@color/grey_inactive" /> <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/badge_title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subscription Starter"
+                android:textAppearance="?attr/textAppearanceSubtitle1"
+                android:textColor="@color/grey_inactive" />
+
+            <TextView
+                android:id="@+id/badge_desc_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register 1 Subscription."
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="@color/grey_inactive" />
+        </LinearLayout>
+        </LinearLayout>
+        <View style="@style/Divider" />
+
+        <LinearLayout
+            android:id="@+id/badge_item_5"
+            style="@style/BadgeItemContainer">
+
+            <ImageView
+                android:id="@+id/badge_icon_5"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_star"
+                android:contentDescription="Five Subscriptions Badge"
+                app:tint="@color/grey_inactive" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:id="@+id/badge_title_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Subscription Collector"
+                    android:textAppearance="?attr/textAppearanceSubtitle1"
+                    android:textColor="@color/grey_inactive" />
+
+                <TextView
+                    android:id="@+id/badge_desc_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Register 5 Subscriptions."
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="@color/grey_inactive" />
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/Divider" />
+
+        <LinearLayout
+            android:id="@+id/badge_item_10"
+            style="@style/BadgeItemContainer">
+
+            <ImageView
+                android:id="@+id/badge_icon_10"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_star"
+                android:contentDescription="Ten Subscriptions Badge"
+               app:tint="@color/grey_inactive" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:id="@+id/badge_title_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Subscription Master"
+                    android:textAppearance="?attr/textAppearanceSubtitle1"
+                    android:textColor="@color/grey_inactive" />
+
+                <TextView
+                    android:id="@+id/badge_desc_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Register 10 Subscriptions."
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="@color/grey_inactive" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
