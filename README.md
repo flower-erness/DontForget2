@@ -1,18 +1,60 @@
-Don’t Forget – Subscription Tracker App
-App Video Link: https://youtube.com/shorts/x09M3K_RPnM?si=mMSMy4uSxr32xuNP
+Don't Forget - Subscription and Payment Manager
 
-Overview
-Don’t Forget is a native Android application built with Kotlin to help users efficiently track, manage, and receive reminders for
-recurring subscriptions such as Netflix, DStv, gym memberships, or software renewals.
-The application ensures that users never miss a renewal or payment date by providing a secure login system, a structured dashboard,
-and automated reminders for upcoming billing events.
 
-Key Features
-1.	Login and Registration – Provides a secure user authentication system with session management.
-2.	View Subscriptions – Displays all active subscriptions, including name, cost, and billing frequency.
-3.	Add, Edit, and Delete Subscriptions – Enables users to manage their subscriptions within one interface.
-4.	Smart Reminders – Sends notifications before billing dates to prevent missed payments.
-5.	Dashboard Overview – Presents a summary of total monthly spending and upcoming payment dates.
+YOUTUBE LINK - https://youtube.com/shorts/kXr5zwxpYuk
+
+Don't Forget is a user-friendly mobile application designed to help you effortlessly manage all your upcoming payments and recurring subscriptions. 
+Keep track of what's due, when it's due, and how much it costs, all in one place.
+
+
+ Key Features
+ * Secure Login: Easy sign-in/sign-up process to keep your data safe.
+ * Upcoming Payments: Clearly view payments that are due soon.
+ * Subscription Tracking: Maintain a list of all your recurring services.
+ * Easy Editing: Quickly update the details of any saved item (Name, Amount, Category).
+ * Categorization: Categorize your payments with popular providers (e.g., Netflix, Spotify, Gym) for better organization.
+ * Multi-Language Support: Supports English, Afrikaans, Zulu, and Sesotho.
+
+   
+ *Achievement System: Track your progress with in-app achievements (e.g., Subscription Starter, Subscription Collector).
+ 
+ *Reminders: Optional reminder functionality to help you never miss a payment.
+
+ 
+Getting Started
+Follow these steps to start managing your payments with "Don't Forget":
+1. Account Setup
+ * Open the application and select Sign Up.
+ * Enter your Email Address and Password to create your account.
+ * Alternatively, use the Sign In with Google option for a quick setup.
+ * Once registered, enter your credentials on the "Welcome Back" screen and tap Login.
+2. Adding a New Item
+ * Tap the + (Plus) icon in the bottom right corner of the Home screen.
+ * In the "Add New Item" dialog:
+   * Select the Type: Choose between Upcoming or Subscription.
+   * Enter a Name (e.g., "Monthly Netflix Payment").
+   * Select a Category (e.g., Netflix, Spotify, Gym).
+   * Enter the Amount (ZAR).
+   * Set an optional Reminder Time.
+ * Tap SAVE (or RED if the app is in Afrikaans).
+3. Editing an Existing Item
+ * On the Home screen, tap the Edit (pencil icon) next to the item you wish to change.
+ * Update the fields as needed (e.g., change the amount from 45555 ZAR to 200 ZAR as shown in the video).
+ * Tap SAVE to apply the changes.
+ Settings & Customization
+The Settings tab allows you to customize your experience:
+ * Reminders: Manage or view your active payment reminders.
+ * Appearance: Adjust the app's look and feel (not shown in detail, but implied).
+ * About: Information about the app.
+ * Logout: Securely log out of your account.
+ * Language Selection: Access this by tapping the language/translation icon 'A' on the home screen to switch between supported languages.
+
+ANDROID STUDIO (KOTLIN + JAVA)
+LOCAL STORAGE PostgreSQL
+
+Dont forget helps users maintain finanicals focus and dicipline knowing they can stay updated with all their subscriptions or due payments
+by ssimply accessing the up. 
+
 
 
 Tech Stack
@@ -23,14 +65,7 @@ Architecture	MVVM (recommended)
 API	RESTful API
 Local Storage	PostgreSQL
 
-
-
-
-
-Getting Started
-
-Prerequisites
-Before running the project, ensure the following software and tools are installed:
+ ensure the following software and tools are installed:
 1.	Android Studio (latest version recommended)
 2.	An Android device or emulator with API Level 21 or higher
 
@@ -42,29 +77,6 @@ Run the Application
 4.	Run the application on an emulator or physical device.
 
 
-API Endpoints
-
-Functionality	Method	Endpoint	Description
-Register User	POST	/auth/register	Creates a new user account
-Login User	POST	/auth/login	Authenticates a user and issues an access token
-Get Subscriptions	GET	/subscriptions	Retrieves all subscriptions for a user
-Add Subscription	POST	/subscriptions	Adds a new subscription
-Delete Subscription	DELETE	/subscriptions/{id}	Deletes a subscription by its ID
-
-
-
-Demonstrated Features
-1.	Switching between Login and Register screens.
-2.	Viewing example subscriptions such as Netflix, DStv, and Showmax.
-3.	Adding new subscriptions using the “Add” button.
-4.	Enabling reminders and notifications for upcoming billing dates.
-
-
-Future Enhancements
-1.	Implementation of monthly spending analytics and visual reports.
-2.	Integration of push notifications for real-time alerts.
-3.	Addition of dark mode for improved accessibility.
-4.	Support for exporting subscription data in CSV or PDF formats.
 
 
 Conclusion
