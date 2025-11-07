@@ -50,7 +50,7 @@ The Settings tab allows you to customize your experience:
  * Language Selection: Access this by tapping the language/translation icon 'A' on the home screen to switch between supported languages.
 
 ANDROID STUDIO (KOTLIN + JAVA)
-LOCAL STORAGE PostgreSQL
+FIREBASE
 
 Dont forget helps users maintain finanicals focus and dicipline knowing they can stay updated with all their subscriptions or due payments
 by ssimply accessing the up. 
@@ -63,7 +63,7 @@ Language	Kotlin
 Platform	Android (Native)
 Architecture	MVVM (recommended)
 API	RESTful API
-Local Storage	PostgreSQL
+FIREBASE
 
  ensure the following software and tools are installed:
 1.	Android Studio (latest version recommended)
